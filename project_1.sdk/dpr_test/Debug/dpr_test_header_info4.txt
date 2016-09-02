@@ -1,0 +1,49 @@
+
+dpr_test.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0001fc54  00100000  00100000  00010000  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .init         00000018  0011fc54  0011fc54  0002fc54  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .fini         00000018  0011fc6c  0011fc6c  0002fc6c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       0000432c  0011fc88  0011fc88  0002fc88  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .data         00001080  00123fb8  00123fb8  00033fb8  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  5 .eh_frame     00000074  00125038  00125038  00035038  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .mmu_tbl      00004000  00128000  00128000  00038000  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .ARM.exidx    00000008  0012c000  0012c000  0003c000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .init_array   00000008  0012c008  0012c008  0003c008  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  9 .fini_array   00000004  0012c010  0012c010  0003c010  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 10 .ARM.attributes 00000035  0012c014  0012c014  0003c014  2**0
+                  CONTENTS, READONLY
+ 11 .bss          00000ae0  0012c020  0012c020  0003c014  2**5
+                  ALLOC
+ 12 .heap         061a8000  0012cb00  0012cb00  0003c014  2**0
+                  ALLOC
+ 13 .stack        0134ee80  062d4b00  062d4b00  0003c014  2**0
+                  ALLOC
+ 14 .debug_info   000011d8  00000000  00000000  0003c049  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_abbrev 00000405  00000000  00000000  0003d221  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_aranges 00000060  00000000  00000000  0003d626  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_macro  00004e15  00000000  00000000  0003d686  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 18 .debug_line   00000c66  00000000  00000000  0004249b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 19 .debug_str    00015d18  00000000  00000000  00043101  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 20 .comment      00000063  00000000  00000000  00058e19  2**0
+                  CONTENTS, READONLY
+ 21 .debug_frame  00001f94  00000000  00000000  00058e7c  2**2
+                  CONTENTS, READONLY, DEBUGGING

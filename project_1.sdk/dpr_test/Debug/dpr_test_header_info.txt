@@ -1,0 +1,53 @@
+
+dpr_test.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000166d0  00100000  00100000  00010000  2**6
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .init         00000018  001166d0  001166d0  000266d0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .fini         00000018  001166e8  001166e8  000266e8  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       00000be8  00116700  00116700  00026700  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .data         00001080  001172e8  001172e8  000272e8  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  5 .eh_frame     00000074  00118368  00118368  00028368  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .mmu_tbl      00004000  0011c000  0011c000  0002c000  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .ARM.exidx    00000008  00120000  00120000  00030000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .init_array   00000008  00120008  00120008  00030008  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  9 .fini_array   00000004  00120010  00120010  00030010  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 10 .ARM.attributes 00000035  00120014  00120014  00030014  2**0
+                  CONTENTS, READONLY
+ 11 .bss          00000ae0  00120020  00120020  00030014  2**5
+                  ALLOC
+ 12 .heap         061a8000  00120b00  00120b00  00030014  2**0
+                  ALLOC
+ 13 .stack        0134ee80  062c8b00  062c8b00  00030014  2**0
+                  ALLOC
+ 14 .debug_info   000024a8  00000000  00000000  00030049  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_abbrev 00000653  00000000  00000000  000324f1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_loc    000009c9  00000000  00000000  00032b44  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_aranges 00000068  00000000  00000000  0003350d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 18 .debug_ranges 00000018  00000000  00000000  00033575  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 19 .debug_macro  00004e1b  00000000  00000000  0003358d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 20 .debug_line   00000c80  00000000  00000000  000383a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 21 .debug_str    00015f05  00000000  00000000  00039028  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 22 .comment      00000063  00000000  00000000  0004ef2d  2**0
+                  CONTENTS, READONLY
+ 23 .debug_frame  000017f8  00000000  00000000  0004ef90  2**2
+                  CONTENTS, READONLY, DEBUGGING
