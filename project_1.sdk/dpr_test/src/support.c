@@ -2,7 +2,7 @@
  * support.c
  *
  *  Created on: Aug 30, 2016
- *      Author: llamocca
+ *      Author: andres
  */
 
 #include "support.h"
